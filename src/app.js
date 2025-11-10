@@ -10,11 +10,16 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { errorHandler } from "./utils/errorHandler.js";
+import doctorsRoute from "./routes/routes/doctor.route.js";
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
+app.use(express.json());
+app.use("/api/doctors", doctorsRoute);
+
 
 // Parse JSON bodies for POST/PUT requests
 app.use(express.json());
