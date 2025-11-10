@@ -1,43 +1,28 @@
 {
-  "name": "devops-lab-student-project",
+  "name": "full_devops_lab_project_final_commented_en",
   "version": "1.0.0",
-  "type": "module",
-  "private": true,
-  "engines": {
-    "node": ">=18"
+  "description": "byg",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
   },
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "lint": "eslint ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChloeDaunas/Full_DevOps_Lab_Project_Final_Commented_EN.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChloeDaunas/Full_DevOps_Lab_Project_Final_Commented_EN/issues"
+  },
+  "homepage": "https://github.com/ChloeDaunas/Full_DevOps_Lab_Project_Final_Commented_EN#readme",
   "dependencies": {
-    "express": "^4.19.2"
-  },
-  "devDependencies": {
-    "vitest": "^2.0.5",
-    "@vitest/coverage-v8": "^2.0.5",
-    "supertest": "^7.0.0",
-    "nodemon": "^3.1.7",
-    "eslint": "^9.12.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^17.10.4",
-    "eslint-plugin-promise": "^6.6.0"
-  },
-  "vitest": {
-    "coverage": {
-      "provider": "v8",
-      "all": true,
-      "include": [
-        "src/**/*.js"
-      ],
-      "lines": 80,
-      "functions": 80,
-      "branches": 70,
-      "statements": 80
-    }
+    "eslint": "^9.39.1",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.4"
   }
 }
