@@ -1,5 +1,7 @@
 import request from "supertest";
 import app from "../src/app.js";
+import { describe, it, expect } from "vitest";
+
 
 describe("Doctors API", () => {
   
